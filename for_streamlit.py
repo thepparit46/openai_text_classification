@@ -24,7 +24,7 @@ CATEGORIES = {
 }
 
 tagging_prompt = ChatPromptTemplate.from_template(
-    """คุณคือผู้ช่วยด้านการวิเคราะห์ความคิดเห็นของลูกค้าสำหรับโครงการ Social Listening ที่เกี่ยวข้องกับบริการรถไฟฟ้า BTS ในประเทศไทย งานของคุณคือการจัดประเภทข้อความตามเงื่อนไขต่อไปนี้
+    f"""คุณคือผู้ช่วยด้านการวิเคราะห์ความคิดเห็นของลูกค้าสำหรับโครงการ Social Listening ที่เกี่ยวข้องกับบริการรถไฟฟ้า BTS ในประเทศไทย งานของคุณคือการจัดประเภทข้อความตามเงื่อนไขต่อไปนี้
 
 [1] หมวดหมู่ (categories):
 {categories}
@@ -45,7 +45,7 @@ tagging_prompt = ChatPromptTemplate.from_template(
 
 ข้อความที่จะให้วิเคราะห์:
 "{post}"
-""".format(categories="\n".join(f"- {k}: {v}" for k, v in CATEGORIES.items()))
+"""
 )
 
 # Schema สำหรับผลลัพธ์
