@@ -15,8 +15,6 @@ import os
 OPENAI_API_KEY = input("Enter your OpenAI API key: ")
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
-!pip install openai
-
 import openai
 print(openai.__version__)
 
@@ -53,9 +51,7 @@ print(resp)
 ## Setup
 """
 
-!pip install langchain
-!pip install langchain-openai
-!pip install langchain-community
+
 
 """**Import**
 *   `ChatOpenAI`: For creating `llms` object
